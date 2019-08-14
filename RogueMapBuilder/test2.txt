@@ -1,0 +1,8 @@
+10 10
+portal 2 12 12
+wall 0
+wall 0
+wall 0
+wall 0
+wall 0
+wall 0

@@ -1,0 +1,5 @@
+13 13
+5 0 wall 0
+5 6 player 1 100
+5 12 wall 0
+6 12 wall 0

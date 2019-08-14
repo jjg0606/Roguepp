@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Mgr">
+      <UniqueIdentifier>{ca65abeb-c4ae-4603-866b-531c2ccdeb1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Mgr">
+      <UniqueIdentifier>{70501ebd-60c6-44d9-b457-2dc4ef7eb20a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Interface">
+      <UniqueIdentifier>{eb217a11-c845-4772-9008-dd4120261687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\LevelFunction">
+      <UniqueIdentifier>{4d9b63fb-a107-4b24-b399-63acd8e1c26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\LevelFunctoin">
+      <UniqueIdentifier>{52064dc7-cab9-4227-92ae-bf9b364ceb36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Utility">
+      <UniqueIdentifier>{ef707922-0373-411a-899b-67a1d7202aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Utility">
+      <UniqueIdentifier>{72cc8f6c-8e68-428d-bce3-3a90c4896515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Factory">
+      <UniqueIdentifier>{9754f11c-34b2-43aa-bac1-da826236f124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\gameObj">
+      <UniqueIdentifier>{0bc29af5-9015-433c-aa8b-5fa58482a7ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Factory">
+      <UniqueIdentifier>{f7e18d5a-3ce7-4175-9c4a-839ef65c65b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\gameObj">
+      <UniqueIdentifier>{c7d5fe5f-09e6-4c93-9060-1304b1cbd1c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelMgr.cpp">
+      <Filter>소스 파일\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectMgr.cpp">
+      <Filter>소스 파일\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelIntro.cpp">
+      <Filter>소스 파일\LevelFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintMgr.cpp">
+      <Filter>소스 파일\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTrans.cpp">
+      <Filter>소스 파일\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelStartMap.cpp">
+      <Filter>소스 파일\LevelFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjFactory.cpp">
+      <Filter>소스 파일\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineInit.cpp">
+      <Filter>소스 파일\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Wall.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LevelMgr.h">
+      <Filter>헤더 파일\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectMgr.h">
+      <Filter>헤더 파일\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Printable.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelList.h">
+      <Filter>헤더 파일\LevelFunctoin</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintMgr.h">
+      <Filter>헤더 파일\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTrans.h">
+      <Filter>헤더 파일\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjFactory.h">
+      <Filter>헤더 파일\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineInit.h">
+      <Filter>헤더 파일\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Wall.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObject.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
