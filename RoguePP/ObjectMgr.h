@@ -1,4 +1,6 @@
 #pragma once
+#include <map>
+#include <string>
 #include "GameObject.h"
 
 // 각종 GameObject를 관리
@@ -11,6 +13,8 @@ private:
 	GameObject** gameObjQue;
 	int queSize;
 	int queCapacity;
+	std::map<std::string, GameObject*> gameObjMap;
+	bool isCleared;
 public:
 	static ObjectMgr& GetInstance();
 	void StartInit();
@@ -19,4 +23,7 @@ public:
 	void ClearQue();
 	void ClearEvenStatic();
 	void SetQueCapacity(int capacity);
+	void AddMap(std::string, GameObject*);
+
+	GameObject* GetObjFromMap(std::string);
 };

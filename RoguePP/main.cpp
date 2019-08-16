@@ -27,8 +27,9 @@ int main()
 	while (isGameRun)
 	{
 		PrintMgr::GetInstance().ClearPrint();
-		ObjectMgr::GetInstance().StartUpdate();
 		PrintMgr::GetInstance().StartPrint();
+		ObjectMgr::GetInstance().StartUpdate();
+		
 	}
 
 	ObjectMgr::GetInstance().ClearEvenStatic();

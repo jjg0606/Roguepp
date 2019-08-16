@@ -19,7 +19,10 @@ void PrintMgr::StartPrint()
 {
 	for (int i = 0; i < queSize; i++)
 	{
-		printableQue[i]->Print();
+		if (printableQue[i]->isShowing)
+		{
+			printableQue[i]->Print();
+		}
 	}
 }
 

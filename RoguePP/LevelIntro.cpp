@@ -23,6 +23,7 @@ public:
 	void Init() override
 	{
 		isStatic = false;
+		isShowing = true;
 	}
 
 	void Update() override
@@ -97,6 +98,11 @@ public:
 		cout << "\t\t" << (cursorPos == 0 ? "¢º" : "  ") << "\tStart New Game" << '\n';
 		cout << "\t\t" << (cursorPos == 1 ? "¢º" : "  ") <<"\t   Load Game" << '\n';
 		cout << "\t\t" << (cursorPos == 2 ? "¢º" : "  ") <<"\t      Exit" << '\n';
+	}
+
+	void SetVariable(string text)
+	{
+
 	}
 };
 

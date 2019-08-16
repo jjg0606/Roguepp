@@ -139,30 +139,48 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BattleObjS.h" />
+    <ClCompile Include="BattleSystem.cpp" />
+    <ClCompile Include="Constants.cpp" />
     <ClCompile Include="EngineInit.cpp" />
+    <ClCompile Include="GameMap.cpp" />
     <ClCompile Include="GameObjFactory.cpp" />
+    <ClCompile Include="infoTop.cpp" />
     <ClCompile Include="InputTrans.cpp" />
     <ClCompile Include="LevelIntro.cpp" />
     <ClCompile Include="LevelMgr.cpp" />
+    <ClCompile Include="LevelSecondMap.cpp" />
     <ClCompile Include="LevelStartMap.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapFileReader.cpp" />
     <ClCompile Include="ObjectMgr.cpp" />
-    <ClCompile Include="Obj_Wall.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="portal.cpp" />
     <ClCompile Include="PrintMgr.cpp" />
+    <ClCompile Include="wall.cpp" />
+    <ClCompile Include="zergling.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleObj.h" />
+    <ClInclude Include="BattleSystem.h" />
     <ClInclude Include="EngineInit.h" />
     <ClInclude Include="GameMap.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameObjFactory.h" />
+    <ClInclude Include="infoTop.h" />
     <ClInclude Include="InputTrans.h" />
     <ClInclude Include="LevelList.h" />
     <ClInclude Include="LevelMgr.h" />
+    <ClInclude Include="MapFileReader.h" />
     <ClInclude Include="MapObject.h" />
     <ClInclude Include="ObjectMgr.h" />
-    <ClInclude Include="Obj_Wall.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="portal.h" />
     <ClInclude Include="Printable.h" />
     <ClInclude Include="PrintMgr.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="wall.h" />
+    <ClInclude Include="zergling.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

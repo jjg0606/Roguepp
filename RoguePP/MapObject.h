@@ -1,7 +1,5 @@
 #pragma once
 #include "GameObject.h"
-#include "GameMap.h"
-#include <string>
 
 class MapObject
 	: public GameObject
@@ -10,7 +8,8 @@ public:
 	int row;
 	int col;
 	std::string shape;
-	void Init() override;
-	void Update() override;
-	void Interact();
+	virtual void Init() override = 0;
+	virtual void Update() override = 0;
+	virtual void SetVariable(std::string) override = 0;
+	virtual void Interact(MapObject* origin) = 0;
 };

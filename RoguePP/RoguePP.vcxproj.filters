@@ -72,11 +72,41 @@
     <ClCompile Include="GameObjFactory.cpp">
       <Filter>소스 파일\Factory</Filter>
     </ClCompile>
-    <ClCompile Include="EngineInit.cpp">
+    <ClCompile Include="MapFileReader.cpp">
       <Filter>소스 파일\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Obj_Wall.cpp">
+    <ClCompile Include="GameMap.cpp">
       <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="wall.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="portal.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSecondMap.cpp">
+      <Filter>소스 파일\LevelFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="infoTop.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="zergling.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleObjS.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSystem.cpp">
+      <Filter>소스 파일\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineInit.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,13 +137,37 @@
     <ClInclude Include="EngineInit.h">
       <Filter>헤더 파일\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Obj_Wall.h">
-      <Filter>헤더 파일\gameObj</Filter>
-    </ClInclude>
     <ClInclude Include="MapObject.h">
       <Filter>헤더 파일\Interface</Filter>
     </ClInclude>
     <ClInclude Include="GameMap.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="MapFileReader.h">
+      <Filter>헤더 파일\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="wall.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="portal.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="infoTop.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="zergling.h">
+      <Filter>헤더 파일\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleObj.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSystem.h">
       <Filter>헤더 파일\gameObj</Filter>
     </ClInclude>
   </ItemGroup>

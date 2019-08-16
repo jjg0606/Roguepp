@@ -3,3 +3,5 @@
 void LevelIntro();
 
 void LevelStartMap();
+
+void LevelSecondMap();

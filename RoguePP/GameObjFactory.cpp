@@ -14,12 +14,17 @@ GameObjFactory& GameObjFactory::GetInstance()
 	return instance;
 }
 
-void GameObjFactory::AddObj(string code, GameObject*(*createfunc)(string))
+void GameObjFactory::AddObj(string code, GameObject*(*createfunc)())
 {
 	objFactoryMap.insert(make_pair(code, createfunc));
 }
 
-GameObject* GameObjFactory::GetObj(string code, string args)
+GameObject* GameObjFactory::GetObj(string code)
 {
-	return objFactoryMap[code](args);
+	auto func = objFactoryMap[code];
+	if (func == nullptr)
+	{
+		return nullptr;
+	}
+	return func();
 }

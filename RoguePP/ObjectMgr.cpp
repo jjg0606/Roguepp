@@ -1,8 +1,11 @@
 #include "ObjectMgr.h"
+#include <iostream>
+using namespace std;
+
 ObjectMgr ObjectMgr::instance;
 
 ObjectMgr::ObjectMgr()
-	: gameObjQue(nullptr), queSize(0), queCapacity(0)
+	: gameObjQue(nullptr), queSize(0), queCapacity(0), isCleared(false)
 {
 	SetQueCapacity(100);
 }
@@ -22,7 +25,8 @@ void ObjectMgr::StartInit()
 
 void ObjectMgr::StartUpdate()
 {
-	for (int i = 0; i < queSize; i++)
+	isCleared = false;
+	for (int i = 0; i < queSize&&!isCleared; i++)
 	{
 		gameObjQue[i]->Update();
 	}
@@ -54,6 +58,7 @@ void ObjectMgr::ClearQue()
 		}
 	}
 	queSize = front;
+	isCleared = true;
 
 }
 
@@ -76,4 +81,15 @@ void ObjectMgr::SetQueCapacity(int capacity)
 
 	gameObjQue = new GameObject*[capacity];
 	this->queSize = 0;
+}
+
+void ObjectMgr::AddMap(string key, GameObject* obj)
+{
+	gameObjMap[key] = obj;
+}
+
+
+GameObject* ObjectMgr::GetObjFromMap(string key)
+{
+	return gameObjMap[key];
 }
